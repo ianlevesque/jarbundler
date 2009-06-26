@@ -240,7 +240,7 @@ public class PropertyListWriter {
 		
 		// JVM architectures, optional
 		if(bundleProperties.getVMArchs() != null) {
-			writeKey("JVMArchs", dict);
+			writeKey("JVMArchs", javaDict);
 			writeArray(bundleProperties.getVMArchs(), javaDict);
 		}
 
