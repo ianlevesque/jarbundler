@@ -238,6 +238,11 @@ public class PropertyListWriter {
 		if ((classPath.size() > 0) || (extraClassPath.size() > 0)) 
 			writeClasspath(classPath, extraClassPath, javaDict);
 		
+		// JVM architectures, optional
+		if(bundleProperties.getVMArchs() != null) {
+			writeKey("JVMArchs", dict);
+			writeArray(bundleProperties.getVMArchs(), javaDict);
+		}
 
 		// JVM options, optional
 		if (bundleProperties.getVMOptions() != null) 

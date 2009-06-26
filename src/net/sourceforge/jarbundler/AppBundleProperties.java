@@ -99,6 +99,8 @@ public class AppBundleProperties {
 	// Services
 	private List mServices = new LinkedList();
 	
+	private List mVMArchs = null;
+	
 	// ================================================================================
 
 	/**
@@ -352,6 +354,14 @@ public class AppBundleProperties {
 
 	public List getClassPath() {
 		return mClassPath;
+	}
+	
+	public void setVMArchs(List vmArchs) {
+		mVMArchs = vmArchs;
+	}
+	
+	public List getVMArchs() {
+		return mVMArchs;
 	}
 
 }

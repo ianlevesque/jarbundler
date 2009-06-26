@@ -455,6 +455,17 @@ public class JarBundler extends MatchingTask {
 	public void setVmoptions(String s) {
 		bundleProperties.setVMOptions(s);
 	}
+	
+	/**
+	 * Setter for the "vmarchs" attribute
+	 */
+	public void setVmarchs(String archs) {
+		List vmArchs = new ArrayList();
+		for(String arch : archs.split(",")) {
+			vmArchs.add(arch);
+		}
+		bundleProperties.setVMArchs(vmArchs);
+	}
 
 	/**
 	 * Setter for the "antialiasedgraphics" attribute (optional)
