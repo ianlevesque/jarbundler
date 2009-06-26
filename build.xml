@@ -12,7 +12,7 @@
 
   <!-- Needs to reference this in order to compile                     -->
   <!-- This path works only for OS X, Windows, and Linux must redefine -->
-  <property name="ant.jar" value="/Developer/Java/Ant/lib/ant.jar" />
+  <property name="ant.jar" value="/usr/share/ant/lib/ant.jar" />
 
    
   <target name="compile" description="Compile the classes">
